@@ -1,5 +1,6 @@
 /* https://htmlcolorcodes.com/colors/ */
 /* https://getcssscan.com/css-box-shadow-examples */
+/* https://www.origamid.com/projetos/css-grid-layout-guia-completo/ */
 
 
 * {
@@ -28,7 +29,7 @@
 
 
 
-/* O RESTO É RESTO */
+/* Início ----------------------> */
 header{
     background-color:white;
     width: auto;
@@ -65,6 +66,7 @@ header{
     border: none;
     font-size: 16px;
     color: #28282b;
+    outline-color: #7e7e7e;
     
 }
 
@@ -80,22 +82,18 @@ header{
     align-items: center;
 }
 .Cima Button:hover{
-    background-color:  #4169E1;
+    background-color:  #FFAA33;
     transition: 0.3s;
     color: white;
     cursor: pointer;
 
 }
 
-
-
-
-/* Divisão cirurgica! */
-
+/* Banner */
 .banner{
-    height: 465px;
+    height: 485px;
     padding: 15px;
-    background-color: #4169E1;
+    background-color: #FFAA33;
 }
 
 .cards{
@@ -108,18 +106,18 @@ header{
 }
 
 
-/* Divisão de Fronteira*/
+/* Meio ----------------------> */
 .Meio{
-    margin: 0 auto;
+    margin: auto;
     height: auto;
-    width: 1200px;
-    /* padding: 5px; */
+    width: 1250px;
 
     position: relative;
     top: -70px;
     border: 10px #FFFAFA solid;
     border-radius: 15px;
     background-color: #E5E4E2;
+
     display: flex;
     flex-direction: column;
 }
@@ -128,27 +126,63 @@ header{
     height: 40px;
     width: auto;
     padding: 5px;
-    background-color: #c0c0c0;
+    padding-left: 30px;
+    background-color: #d3d3d3b4;
     border-radius: 5px 5px 0px 0px; 
-    
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
 }
-.catalogo{
-    padding: 5px;
+.ButtonNav{
+    height: 35px;
     width: auto;
-    height: 1000px;
-    background-color: rgb(85, 84, 84);
-    border-radius: 0px 0px 10px 10px; 
+    padding: 2.5px 20px 2.5px 20px;
+    border-radius: 20px;
+    border: 2px solid #28282b;
+    background: transparent;
+    color: #28282b;
+}
+.ButtonNav:hover{
+    background-color: #508ad4;
+    color: white;
+    transition: 0.3s;
+
 }
 
-/*Divisão Sensacional*/
+.catalogo{
+    padding: 15px;
+    width: auto;
+    height: 1000px;
+    
+    border-radius: 0px 0px 10px 10px; 
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.box{
+    height: 240px;
+    width: 270px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #28282b;
+}
+
+/* Fim ----------------------> */
 footer{
     background-color: #28282b;
-    height: 250px;
+    height: 170px;
     padding: 0px;
 }
 
 .baixo{
-    height: 150px;
+    height: 100px;
     width: 1200px;
     margin: auto;
     

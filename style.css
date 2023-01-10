@@ -1,12 +1,35 @@
 * {
     margin: 0;
+    font-family: 'Fira Sans', sans-serif;;
 }
 
+::-webkit-scrollbar { /* Lagura do Scroll*/
+    width: 15px;
+}
+::-webkit-scrollbar-thumb { /* Barra do scroll */
+    background: #aaaaaa;
+    border-radius: 100px;
+    background-clip: content-box;
+    border: 3px transparent solid;
+}
+/* Track */
+::-webkit-scrollbar-track { /*fundo do scroll*/
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:hover { /*Animação do scrollBar*/
+    background: #7e7e7e;
+    background-clip: content-box;
+    border: 3px transparent solid;
+}
+
+
+
+/* O RESTO É RESTO */
 header{
     background-color:white;
     width: auto;
     padding: 5px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
     position: relative;
 }
@@ -15,15 +38,57 @@ header{
     margin: 0 auto;
     padding: 10px;
     width: 1100px;
-    height: 28px;
+    height: 40px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 
-
-    border: 5px black solid;
-    border-radius: 5px;
+    /* border: 5px black solid;
+    border-radius: 5px; */
 }
 
+.pesquisa{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 34.5px;
+    width: 700px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    border: none;
+    font-size: 16px;
+    color: #28282b;
+    
+}
+
+.Cima button{
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    align-items: center;
+}
+.Cima Button:hover{
+    background-color: #eb7272;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+
+/* Divisão cirurgica! */
+
 .banner{
-    height: 450px;
+    height: 465px;
     padding: 15px;
     background-color: #da3f3f;
 }
@@ -31,11 +96,11 @@ header{
 .Meio{
     margin: 0 auto;
     height: 1000px;
-    width: 1370px;
+    width: 1200px;
     padding: 5px;
 
     position: relative;
-    top: -50px;
+    top: -70px;
     border: 10px #FFFAFA solid;
     border-radius: 15px;
     background-color: rgb(92, 82, 245);
@@ -54,7 +119,7 @@ footer{
 
 .baixo{
     height: 150px;
-    width: 1100px;
+    width: 1200px;
     margin: auto;
     
     border: 5px black solid;

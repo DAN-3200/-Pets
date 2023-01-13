@@ -1,7 +1,4 @@
-/* https://htmlcolorcodes.com/colors/ */
-/* https://getcssscan.com/css-box-shadow-examples */
-/* https://www.origamid.com/projetos/css-grid-layout-guia-completo/ */
-
+/* Geral */
 
 * {
     margin: 0;
@@ -17,7 +14,7 @@
     background-clip: content-box;
     border: 3px transparent solid;
 }
-/* Track */
+
 ::-webkit-scrollbar-track { /*fundo do scroll*/
     background: #ffffff;
 }
@@ -26,7 +23,6 @@
     background-clip: content-box;
     border: 3px transparent solid;
 }
-
 
 
 /* Início ----------------------> */
@@ -70,6 +66,7 @@ header{
     
 }
 
+
 .Cima button{
     height: 40px;
     width: 40px;
@@ -80,7 +77,11 @@ header{
     font-size: 20px;
     color: rgb(82, 82, 82);
     align-items: center;
+    transition: 0.3s;
 }
+
+
+
 .Cima Button:hover{
     background-color:  #FFAA33;
     transition: 0.3s;
@@ -88,6 +89,7 @@ header{
     cursor: pointer;
 
 }
+
 
 /* Banner */
 .banner{
@@ -103,19 +105,23 @@ header{
     background-color: #28282b;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
 }
-
+.cards:hover{
+    transition: 0.3s;
+    transform: scale(1.01);
+}
 
 /* Meio ----------------------> */
 .Meio{
     margin: auto;
     height: auto;
-    width: 1250px;
+    width: 1270px;
 
     position: relative;
     top: -70px;
     border: 10px #FFFAFA solid;
-    border-radius: 15px;
+    border-radius: 15px 15px 20px 20px;
     background-color: #E5E4E2;
 
     display: flex;
@@ -137,42 +143,74 @@ header{
 
 }
 .ButtonNav{
+    font-size: 15px;
     height: 35px;
     width: auto;
     padding: 2.5px 20px 2.5px 20px;
-    border-radius: 20px;
-    border: 2px solid #28282b;
+    border-radius: 15px;
+    border: 2px solid #818181;
     background: transparent;
     color: #28282b;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
 }
 .ButtonNav:hover{
-    background-color: #508ad4;
+    background-color: #28282b;
     color: white;
     transition: 0.3s;
+    border: transparent 2px solid;
+    cursor: pointer;
 
 }
 
 .catalogo{
-    padding: 15px;
+    padding: 10px;
     width: auto;
-    height: 1000px;
+    min-height: 1100px;
     
     border-radius: 0px 0px 10px 10px; 
 
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
 }
 .box{
-    height: 240px;
-    width: 270px;
-    padding: 15px;
-    border-radius: 25px;
+    height: 280px;
+    width: 220px;
+    padding: 5px;
+    border-radius: 15px;
     background-color: #28282b;
+    display: flex;
+    flex-direction: column;
+    border: transparent 4px solid;
+    transition: 0.5s;
 }
+.box:hover{
+    transition: 0.3s;
+    border: #FFAA33 4px solid;
+    cursor: pointer;
+}
+
+.box img{
+    height: 200px;
+    border-radius: 5px 5px 5px 5px;
+}
+.CardValue{
+    font-size: 14px;
+    height: 50px;
+    width: auto;
+    padding: 5px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
 
 /* Fim ----------------------> */
 footer{
@@ -185,10 +223,16 @@ footer{
     height: 100px;
     width: 1200px;
     margin: auto;
-    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     /* border: 5px black solid;
     border-radius: 5px; */
 
 }
+
+/* CAMPO DE TESTE */
 
 

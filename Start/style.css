@@ -93,23 +93,70 @@ header{
 
 /* Banner */
 .banner{
-    height: 470px;
-    padding: 1px;
+    height: 490px;
+    padding: 5px;
     background-color: #FFAA33;
 }
-
 .cards{
     margin: 15px auto;
-    height: 370px;
+    height: 360px;
     width: 1100px;
     background-color: #28282b;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.3s;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .cards:hover{
     transition: 0.3s;
     transform: scale(1.01);
+    cursor: pointer;
+}
+
+/* Slider Settings */
+
+.S-Banner{
+    margin: 0 auto;
+    height: 390px;
+    width: 1130px;
+    overflow: hidden;
+}
+.S-Banner input{
+    display: none;
+}
+.Slides{
+    width: 405%;
+    height: 390px;
+    display: flex;
+    /* flex-direction: row; */
+    gap: 5px;
+}
+/* .S-Img{
+
+} */
+
+.Navigation-label{
+    margin-top: 10px ;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Manual-label {
+    border: #FFFAFA solid 2px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Manual-label:hover{
+    transition: 0.3s;
+    background-color: #FFFAFA;
+}
+
+#radio1:checked ~ button{
+    background-color: transparent;
 }
 
 /* Meio ----------------------> */
@@ -119,6 +166,7 @@ header{
     width: 1270px;
 
     position: relative;
+    z-index: 1;
     top: -70px;
     border: 10px #FFFAFA solid;
     border-radius: 15px 15px 20px 20px;
@@ -147,10 +195,10 @@ header{
     height: 35px;
     width: auto;
     padding: 2.5px 20px 2.5px 20px;
-    border-radius: 15px;
+    border-radius: 100px;
     border: 2px solid #818181;
     background: transparent;
-    color: #28282b;
+    color: #3f3f3f;
     
     align-items: center;
     display: flex;
@@ -231,6 +279,42 @@ header{
 .CardValue p:hover{
     color: #FFAA33;
     cursor: pointer;
+}
+.PagBar{
+    width: 300px;
+    height: 0px;
+    margin: auto;
+
+    
+    top: -40px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+}
+.PagBar p{
+    font-size: 18px;
+}
+.PagBar p{
+    color: black;
+    cursor: pointer;
+}
+.PagBar button{
+    height: 35px;
+    padding: 5px;
+    background-color: #d3d3d3;
+    border: 5px transparent solid;
+    border-radius: 5px;
+    color: #28282b;
+}
+.PagBar button:hover{
+    color: black;
+    cursor: pointer;
+    background-color: #b9b9b9;
+    transition: 0.3s;
 }
 
 
